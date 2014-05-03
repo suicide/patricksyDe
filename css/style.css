@@ -13,7 +13,7 @@ html {
 
 @media (min-width: 768px) {
     #home {
-        background: url("../img/the_face_200.png") no-repeat center top;
+        background: url("../img/the_face_200.jpg") no-repeat center top;
         padding-top: 280px;
         min-height: 880px;
     }
@@ -44,7 +44,7 @@ html {
 @media (max-width: 767px) {
     .head-image {
         display: block;
-        background: url("../img/the_face_small.png") no-repeat center top;
+        background: url("../img/the_face_small.jpg") no-repeat center top;
         min-height: 330px;
     }
 }

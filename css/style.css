@@ -11,11 +11,21 @@ html {
     padding-bottom: 10px;
 }
 
+.title-name {
+    margin-bottom: 0px;
+}
+
 @media (min-width: 768px) {
     #home {
         background: url("../img/the_face_200.jpg") no-repeat center top;
-        padding-top: 280px;
+        padding-top: 250px;
         min-height: 880px;
+    }
+
+    .title-name {
+        font-size: 30px;
+        font-weight: 300;
+        color: #ffffff;
     }
 
     .intro-text {
@@ -46,6 +56,15 @@ html {
         display: block;
         background: url("../img/the_face_small.jpg") no-repeat center top;
         min-height: 330px;
+    }
+
+    .title-name {
+        font-size: 20px;
+    }
+
+    h2.intro-text-head {
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }
 

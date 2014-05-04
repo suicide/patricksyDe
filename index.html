@@ -14,10 +14,14 @@
 </head>
 <body>
     <section id="home">
-        <div class="head-image"></div>
+        <div class="head-image">
+            <h1>
+                <img src="img/the_face_small.jpg" alt="Patrick Sy" id="portrait">
+            </h1>
+        </div>
         <div class="container">
 
-            <div class="row">
+            <div class="row title-name-row">
                 <div class="col-sm-7">
                     <h1 class="title-name">Patrick Sy</h1>
 
@@ -85,5 +89,26 @@
 
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script type="application/javascript">
+        $(document).ready(function() {
+
+            var theWindow = $(window);
+            var image = $('#portrait');
+
+            function checkWidth() {
+                var windowSize = theWindow.width();
+                // why??
+                if (windowSize > 752) {
+                    image.attr('src', 'img/the_face_200.jpg');
+                } else {
+                    image.attr('src', 'img/the_face_small.jpg');
+                }
+            }
+
+            checkWidth();
+            theWindow.resize(checkWidth);
+        });
+    </script>
 </body>
 </html>

@@ -11,7 +11,7 @@ html {
     margin-bottom: 0px;
 }
 
-.head-image h1 {
+.head-image h2 {
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -27,9 +27,13 @@ html {
     display: none;
 }
 
+h4 {
+    font-size: 24px;
+}
+
 @media (min-width: 768px) {
     #home {
-        background: url("../img/the_face_200.jpg") no-repeat center top;
+        background: url("../img/psy_the_face_200.jpg") no-repeat center top;
         padding-top: 250px;
         min-height: 880px;
     }
@@ -69,6 +73,7 @@ html {
         padding-bottom: 20px;
     }
 
+
 }
 
 @media (max-width: 767px) {
@@ -80,8 +85,9 @@ html {
         font-size: 20px;
     }
 
-    h2.intro-text-head {
+    h3.intro-text-head {
         margin-bottom: 0px;
+        font-size: 30px;
     }
 }
 

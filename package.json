@@ -16,6 +16,7 @@
     "gulp": "^3.8.x",
     "gulp-concat": "^2.4.x",
     "gulp-jshint": "^1.9.x",
+    "gulp-minify-css": "^0.3.x",
     "gulp-rename": "^1.2.x",
     "gulp-sass": "^1.1.x",
     "gulp-uglify": "^1.0.x"

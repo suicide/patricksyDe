@@ -47,4 +47,11 @@ gulp.task('images', function () {
     .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('default', ['clean', 'html', 'js', 'css', 'images', 'fonts']);
+gulp.task('watch', function() {
+  gulp.watch('app/js/*.js', ['js']);
+  gulp.watch('app/css/*.css', ['css']);
+});
+
+gulp.task('build', ['html', 'js', 'css', 'images', 'fonts']);
+
+gulp.task('default', ['clean', 'build']);

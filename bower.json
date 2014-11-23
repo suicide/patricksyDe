@@ -1,0 +1,21 @@
+{
+  "name": "patricksyDe",
+  "version": "0.1.0",
+  "authors": [
+    "Patrick Sy <patrick.sy@get-it.us>"
+  ],
+  "description": "personal website with all the cool frontend stuff",
+  "license": "MIT",
+  "homepage": "http://patricksy.de",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.x",
+    "bootstrap": "~3.3.x"
+  }
+}

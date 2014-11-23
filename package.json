@@ -1,0 +1,26 @@
+{
+  "name": "patricksyDe",
+  "version": "0.1.0",
+  "description": "personal website with all the cool frontent stuff",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/suicide/patricksyDe.git"
+  },
+  "homepage": "http://patricksy.de",
+  "license": "MIT",
+  "author": "Patrick Sy <patrick.sy@get-it.us> (http://patricksy.de)",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "bower": "^1.3.x",
+    "del": "^0.1.x",
+    "gulp": "^3.8.x",
+    "gulp-concat": "^2.4.x",
+    "gulp-jshint": "^1.9.x",
+    "gulp-rename": "^1.2.x",
+    "gulp-sass": "^1.1.x",
+    "gulp-uglify": "^1.0.x"
+  },
+  "scripts": {
+    "postinstall": "node_modules/.bin/bower install && node_modules/.bin/gulp"
+  }
+}

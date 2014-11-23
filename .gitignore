@@ -19,6 +19,7 @@ activemq-data/
 /build
 buildSrc/build
 target/
+/dist
 
 # Eclipse artifacts, including WTP generated manifests
 .classpath
@@ -33,3 +34,7 @@ battlecat-*/src/main/java/META-INF/MANIFEST.MF
 out
 test-output
 atlassian-ide-plugin.xml
+
+node_modules
+bower_components
+*.log

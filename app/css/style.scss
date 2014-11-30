@@ -1,8 +1,12 @@
 @import "../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
 // Core variables and mixins
 
+$mainTextColor: #ffffff;
+$backgroundColor: #cccccc;
+
+
 .site {
-  background-color: #cccccc;
+  background-color: $backgroundColor;
   text-align: center;
 }
 
@@ -52,14 +56,14 @@
   .title-name {
     font-size: 30px;
     font-weight: 300;
-    color: #ffffff;
+    color: $mainTextColor;
   }
 
   .intro-text {
 
     font-size: 20px;
     font-weight: 300;
-    color: #ffffff;
+    color: $mainTextColor;
 
   }
 

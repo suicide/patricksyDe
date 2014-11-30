@@ -29,16 +29,16 @@ gulp.task('lint', function() {
 
 gulp.task('js', function () {
   return gulp.src(['app/bower_components/jquery/dist/*.min.js',
-    'app/bower_components/bootstrap/dist/js/*.min.js',
+    'app/bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js',
     'app/js/*.js'])
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest('dist/js'));
 });
 
-gulp.task('css', function () {
-  return gulp.src(['app/bower_components/bootstrap/dist/css/*.min.css', 'app/css/*.css'])
-    .pipe(concat('style.css'))
+gulp.task('sass', function () {
+  return gulp.src(['app/css/style.scss'])
+    .pipe(sass())
     .pipe(minifyCss())
     .pipe(gulp.dest('dist/css'));
 });
@@ -55,9 +55,9 @@ gulp.task('images', function () {
 
 gulp.task('watch', function() {
   gulp.watch('app/js/*.js', ['js']);
-  gulp.watch('app/css/*.css', ['css']);
+  gulp.watch('app/css/*.scss', ['sass']);
 });
 
-gulp.task('build', ['html', 'lint', 'js', 'css', 'images', 'fonts']);
+gulp.task('build', ['html', 'lint', 'js', 'sass', 'images', 'fonts']);
 
 gulp.task('default', ['clean', 'build']);

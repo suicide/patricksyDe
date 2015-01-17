@@ -19,7 +19,8 @@
     "gulp-minify-css": "^0.3.x",
     "gulp-rename": "^1.2.x",
     "gulp-sass": "^1.1.x",
-    "gulp-uglify": "^1.0.x"
+    "gulp-uglify": "^1.0.x",
+    "gulp-uncss": "^0.5.2"
   },
   "scripts": {
     "postinstall": "node_modules/.bin/bower install && node_modules/.bin/gulp"

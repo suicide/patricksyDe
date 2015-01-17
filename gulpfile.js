@@ -9,6 +9,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var minifyCss = require('gulp-minify-css');
+var uncss = require('gulp-uncss');
 
 // clean up
 gulp.task('clean', function () {
@@ -39,6 +40,9 @@ gulp.task('js', function () {
 gulp.task('sass', function () {
   return gulp.src(['app/css/style.scss'])
     .pipe(sass())
+    .pipe(uncss({
+      html: ['app/index.html']
+    }))
     .pipe(minifyCss())
     .pipe(gulp.dest('dist/css'));
 });

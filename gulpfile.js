@@ -48,7 +48,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('fonts', function () {
-  return gulp.src('app/bower_components/bootstrap/dist/fonts/*')
+  return gulp.src('app/bower_components/bootstrap-sass-official/assets/fonts/bootstrap/*')
     .pipe(gulp.dest('dist/fonts'));
 });
 

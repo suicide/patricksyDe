@@ -60,6 +60,7 @@ gulp.task('images', function () {
 gulp.task('watch', function() {
   gulp.watch('app/js/*.js', ['js']);
   gulp.watch('app/css/*.scss', ['sass']);
+  gulp.watch('app/*.html', ['html']);
 });
 
 gulp.task('build', ['html', 'lint', 'js', 'sass', 'images', 'fonts']);

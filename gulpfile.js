@@ -58,6 +58,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('watch', function() {
+  gulp.watch('app/*.html', ['html']);
   gulp.watch('app/js/*.js', ['js']);
   gulp.watch('app/css/*.scss', ['sass']);
 });

@@ -38,3 +38,8 @@ atlassian-ide-plugin.xml
 node_modules
 bower_components
 *.log
+### https://raw.github.com/github/gitignore/4a9d41f8947b9fe5850914abb7e59a59e1ae2cb6/Global/Vagrant.gitignore
+
+.vagrant/
+
+

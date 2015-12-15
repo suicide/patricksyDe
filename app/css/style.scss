@@ -57,6 +57,10 @@ $backgroundColor: #cccccc;
     font-size: 30px;
     font-weight: 300;
     color: $mainTextColor;
+    &.chinese {
+      font-size: 18px;
+      margin-top: 5px;
+    }
   }
 
   .intro-text {

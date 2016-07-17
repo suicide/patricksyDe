@@ -38,11 +38,16 @@ $backgroundColor: #cccccc;
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   #home {
-    background: url("../img/psy_the_face_200.jpg") no-repeat center top;
-    padding-top: 250px;
-    min-height: 880px;
+    background: url("../img/psy_big.jpg") no-repeat left top;
+    padding-top: 350px;
+    min-height: 1080px;
+
+    .container {
+      margin-left: 10px;
+      width: 768px;
+    }
   }
 
   .head-image {
@@ -87,7 +92,7 @@ $backgroundColor: #cccccc;
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 799px) {
   .head-image {
     display: block;
   }

@@ -10,9 +10,9 @@ $(document).ready(function() {
     var windowSize = theWindow.width();
     // why??
     if (windowSize > 752) {
-      image.attr('src', 'img/psy_the_face_200.jpg');
+      image.attr('src', 'img/psy_big.jpg');
     } else {
-      image.attr('src', 'img/psy_the_face_small.jpg');
+      image.attr('src', 'img/psy_small.jpg');
     }
   }
 
